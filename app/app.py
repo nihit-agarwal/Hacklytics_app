@@ -1,10 +1,12 @@
 import streamlit as st
-from config import QDRANT_DB_API_KEY, QDRANT_URL, OPEN_AI_API_KEY
+#from config import QDRANT_DB_API_KEY, QDRANT_URL, OPEN_AI_API_KEY
 from sentence_transformers import SentenceTransformer
 from qdrant_client import QdrantClient
 from openai import OpenAI
 import ast
-
+QDRANT_DB_API_KEY = st.secrets['QDRANT_DB_API_KEY']
+QDRANT_URL = st.secrets['QDRANT_URL']
+OPEN_AI_API_KEY = st.secrets['OPEN_AI_API_KEY']
 
 # Connection for semantic queries
 qdrant_client = QdrantClient(

@@ -1,0 +1,2 @@
+# Hotel Advisor App
+This is a web app that was built during Hacklytics competition. Users looking for good hotel options that match their specification can find a perfect hotel in seconds and interact with a chat bot to learn about the specifics of the hotel, or make a selection among the different options. App was built using qdrant db as a backend vector databse, OpenAI's LLM (gpt-3.5 turbo) and Streamlit.
